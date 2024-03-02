@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            functionvalidateForm()
+            {
+                var un = document.loginform.usr.value;
+                varpw = document.loginform.pword.value;
+                var username = "username";
+                var password = "password";
+                if ((un == username) && (pw == password)){
+                    return true;
+                }else{
+                    alert ("Login was unsuccessful, please check your username and password");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>LOGIN FORM VALIDATION</h1>
+        <form name="loginform" onSubmit="return validateForm();" action="Registration.html" method="post">
+            <label>User name</label>
+            <input type="text" name="usr" placeholder="username">
+            <label>Password</label>
+            <input type="password" name="pword" placeholder="password">
+            <input type="submit" value="Login"/>
+        </form>
+    </body>
+</html>
